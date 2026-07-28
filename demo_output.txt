@@ -1,0 +1,12 @@
+Q: How many employees are in Engineering?
+SQL: SELECT COUNT(*) AS count FROM employees WHERE department = 'Engineering'
+A: 2
+---
+Q: List employees in HR
+SQL: SELECT name, department, salary FROM employees WHERE department = 'HR'
+A: name=Meera, department=HR, salary=70000.0; name=Jon, department=HR, salary=72000.0
+---
+Q: What is the average salary in Engineering?
+SQL: SELECT AVG(salary) AS avg_salary FROM employees WHERE department = 'Engineering'
+A: 87500.0
+---

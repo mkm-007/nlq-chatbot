@@ -1,0 +1,3 @@
+# Put JD-specific modules here, e.g.:
+# extensions/snowflake_connector/
+# extensions/langchain_llm/
