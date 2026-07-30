@@ -1,7 +1,7 @@
 # NLQ Chatbot over Database
 
-**Resume project · SPT work unit**  
-**Capability:** grounded natural-language access to relational data for non-technical staff  
+Natural-language-to-SQL chatbot for staff who need answers from operational records without writing SQL. Answers are grounded on database results.
+
 **Background:** Centre for Advanced Technology Solutions, GITAM · May 2024 – Dec 2024  
 **Stack:** Python · LangChain-style pipeline · SQLite (local) / Postgres-ready · LLM interface (mockable offline)
 
@@ -11,22 +11,11 @@
 
 Staff needed answers from operational records but could not write SQL. Answers had to come from the database — not from model guesses.
 
-## What I built
+## What it does
 
 1. Map natural-language questions to a constrained SQL path  
 2. Execute against a demo employee schema  
 3. Return answers grounded on query results  
-
-Resume anchor: *Built natural-language-to-SQL chatbot so staff can query records without raw SQL; grounded answers on DB results. Designed safe query path and demo workflow for staff-facing use.*
-
-## SPT bar (junior standard)
-
-| Step | Artifact |
-|------|----------|
-| Build | `src/nlq_chatbot/` |
-| Verify | `python -m pytest -q` |
-| Demo | `python run_demo.py` · [`demo_output.txt`](./demo_output.txt) |
-| Document | this README |
 
 ## Quick start
 
@@ -36,6 +25,8 @@ pip install -r requirements.txt
 python -m pytest -q
 python run_demo.py
 ```
+
+Demo output: [`demo_output.txt`](./demo_output.txt)
 
 ## Design notes
 
@@ -48,11 +39,11 @@ python run_demo.py
 ```
 src/nlq_chatbot/
 tests/
-extensions/        # JD-specific modules (Snowflake, RAG hooks, …)
+extensions/
 run_demo.py
 demo_output.txt
 ```
 
 ## Portfolio
 
-Full Experience · Projects · SPT → [mkm-007/MKM](https://github.com/mkm-007/MKM)
+[mkm-007/MKM](https://github.com/mkm-007/MKM) · [Live site](https://mkm-007.github.io/MKM/)
